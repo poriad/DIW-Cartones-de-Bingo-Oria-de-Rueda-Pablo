@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reglas del Juego</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center pb-3 ">
+            <div class="col-12   text-center">
+                <img src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                    class="img-fluid rounded-circle imagen" alt="" />
+                
+                  
+                    <button type="button" class="btn btn-primary float-right mt-3 mr-3" title="Introduce tus datos:" data-content="Hemos llegado al límite de jugadores simultaneos" data-toggle="popover" data-placement="bottom" >
+                      Login
+                    </button>
+            </div>
+
+        </div>
+
+        <div class="row ">
+            <div class="col-12 ">
+                <nav class="navbar navbar-expand-md navbar-light bg-light border-right border-left border-primary">
+                    <button class="navbar-toggler custom-toggler mx-2 my-2" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="navbarNav">
+                        <ul class="navbar-nav  mx-auto ">
+                            <li class="nav-item px-5">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item  px-5">
+                                <a class="nav-link" href="reglas.html">Reglas del juego</a>
+                            </li>
+                            <li class="nav-item  px-5">
+                                <a class="nav-link" href="bingo.html">¡Bingo!</a>
+                            </li>
+                            <li class="nav-item  px-5">
+                                <a class="nav-link " href="ranking.html">Ranking</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+        <div class="row align-items-center justify-content-center pt-4">
+            <div class="col-12 col-md-10 col-lg-9 ">
+                <div class="jumbotron text-center border border-secondary bg-light">
+                    <h1 class="display-5 pb-4"><u>Objetivo del Juego</u></h1>
+                    <p class="lead">El objetivo es sencillo. A través del giro del bombo, en el que están contenidas las
+                        bolas numeradas en juego, se va obteniendo una serie de números. Los jugadores en sus cartones
+                        tienen una parte de los números del incluidos en el bombo y van tachando los que se cantan. Si
+                        tachan una línea de números, tienen premio (se canta línea) y se continúa la partida. Si tachan
+                        todos los números del cartón, se canta bingo y se termina el juego.
+                        <br><br>
+                        En España, son las Comunidades Autónomas las que deciden las normas del bingo en su territorio y
+                        estas normas han de estar a disposición de los jugadores para poder solucionar cualquier tipo de
+                        controversia.
+                        <br><br>
+                        Vamos a entrar con más detenimiento en cada una de las partes fundamentales del juego (en su
+                        dimensión más tradicional, el bingo físico, pero aplicable en su gran mayoría a nuestro bingo online), que no son otras que el bombo, las bolas y los
+                        cartones:</p>
+                    <hr class="hr my-2">
+                    <p class="h4 pb-2">Elementos que debes conocer:</p>
+                    <div class="row">
+                        <div class="col-6 col-lg-3 pb-3">
+                    <a class="btn btn-primary btn-lg " href="#" role="button" data-toggle="modal"
+                        data-target="#bombo">El Bombo</a>
+                        </div>
+                        <div class="col-6 col-lg-3 pb-3">
+                    <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal"
+                        data-target="#bolas">Las Bolas</a>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                    <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal"
+                        data-target="#cartones">Los Cartones</a>
+                    </div>
+                    <div class="col-6 col-lg-3 ">
+                    <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal"
+                        data-target="#tipos">Tipos</a>
+                    </div>
+                    </div>
+                    <br>
+                    <p class="pb-3">¡Deja de leer y empieza a gastar tu dinero!</p>
+                    <a class="btn btn-primary btn-lg" href="bingo.html" role="button">¡Empieza a Jugar!</a>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <!-- Modal Bombo -->
+        <div class="modal fade" id="bombo" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content text-center bg-dark">
+                    <div class="modal-header justify-content-center">
+                        <h5 class="modal-title text-center h4" id="exampleModalScrollableTitle">El Bombo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Es el dispositivo que, con sus giros, decide de forma totalmente aleatoria qué bolas van a salir
+                        por su abertura. Algo muy similar al bombo de la lotería que todos vemos en la tele por Navidad,
+                        pero con bolas numeradas del 1 al 90. Se trata de dos semiesferas que se cierran formando una
+                        completa que permite que los números se mezclen sin posibilidad de manipular el resultado.
+                        <br><br>
+                        Los domésticos para jugar después de una comida en familia se giran a mano con una manivela, los
+                        profesionales tienen un motor eléctrico que los hace girar. También es importante que se pueda
+                        ver el interior con las bolas dando tumbos, en este caso la transparencia es metafórica y
+                        también física. El tiempo entre cada salida de bola es breve, por lo que los jugadores deben
+                        permanecer concentrados y atentos mientras dura la partida.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Bolas -->
+        <div class="modal fade" id="bolas" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content text-center bg-dark">
+                    <div class="modal-header justify-content-center">
+                        <h5 class="modal-title text-center h4" id="exampleModalScrollableTitle">Las Bolas</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Las bolas han de ser revisadas antes de introducirse en el bombo y deben quedar reflejados los
+                        números que van saliendo en su orden correspondiente en un panel o pantalla a disposición de los
+                        jugadores. Las salas de bingo tienen la obligación de tener a mano siempre un juego nuevo y
+                        completo de bolas, por si pasara cualquier cosa con los que están en uso, desde que falta alguna
+                        hasta que cualquiera de ellas no tenga el tamaño o el peso adecuado. Deben llevar el número
+                        impreso visible y bien legible.
+                        <br><br>
+                        Las bolas deben ser homologadas por la autoridad competente. Generalmente se juega con 90 bolas
+                        numeradas del 1 al 90, pero también está la variedad del bingo de 75 bolas ( y tranquilos que
+                        ninguna puede rodar bajo la alfombra, se hacen recuentos obligatorios antes y después y si
+                        faltara alguna se invalidaría la partida).
+                        <br><br>
+                        Para evitar que se juegue con bolas deterioradas que puedan traer problemas se suele regular
+                        incluso el número de partidas que podrán jugarse con cada juego de bolas. Después deberán ser
+                        sustituidas por un juego distinto de bolas.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Cartones -->
+        <div class="modal fade" id="cartones" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content text-center bg-dark">
+                    <div class="modal-header justify-content-center">
+                        <h5 class="modal-title text-center h4" id="exampleModalScrollableTitle">Los Cartones</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        a parte más importante, la que va a manejar el jugador, consiste en una cuadrícula que suele
+                        tener nueve columnas y tres filas. Como os habíamos dicho, a legislación española ha dejado
+                        estas competencias en manos de las Comunidades Autónomas. Mientras éstas redactan sus normativas
+                        propias existe una orden ministerial de 9 de enero de 1979, por la que se aprueba el Reglamento
+                        del Juego del Bingo, que nos puede dar una pista de cómo se prevé que sea el cartón.
+                        <br><br>
+                        Lo primero es que deben ser expedidos por la autoridad competente (en la actualidad ya se pueden
+                        imprimir en el propio bingo, pero siempre siguiendo los requisitos de la legislación aplicable).
+                        Han de ser vendidos además dentro de la propia sala y para una partida específica (para la
+                        siguiente se han de retirar necesariamente). El jugador ha de tachar las casillas de los números
+                        cantados con algún método que no se pueda borrar. ¡El lápiz no vale! Hay 15 números por cartón.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Tipos -->
+        <div class="modal fade" id="tipos" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content text-center bg-dark">
+                    <div class="modal-header justify-content-center">
+                        <h5 class="modal-title text-center h4" id="exampleModalScrollableTitle">Tipos de Bingo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        El bingo más frecuente es el de 90 bolas. Tiene una variedad que depende de las salas en las que
+                        se juegue, que es el bingo simultáneo. En esta modalidad no hay un bombo por sala sino que
+                        varias salas entre sí conectadas por un sistema llamado Red de distribución. Las normas para los
+                        jugadores son las mismas y la diferencia es la cantidad de personas que juegan una partida a la
+                        vez, ya que puede crecer mucho el número de participantes.
+                        <br><br>
+                        Por supuesto no podíamos dejar de mencionar nuestra pasión y razón de ser ¡El bingo online! Un
+                        bingo cuyo objetivo es el mismo que te hemos contado para el bingo tradicional pero que puede
+                        introducir un montón de variantes que lo hacen más atractivo:
+                        <br><br>
+                        1- Puedes jugar desde casa, desde la playa o desde donde estés con tu smartphone, tableta u
+                        ordenador.
+                        <br><br>
+                        2- Puedes jugar despistándote un poco: los cartones ¡se tachan solitos! eso permite que puedas
+                        charlar con tus compañeros de partidas y atendiendo al moderador del chat, que también te puede
+                        facilitar el ganar algún premio extra mientras haces amigos y te diviertes.
+                        <br><br>
+                        3- Puedes elegir modalidades de 90 o de 75 bolas. El bingo de 75 sigue las mismas reglas que el
+                        de 90 y proviene de Estados Unidos. Se juega con cartones de cinco columnas por cinco líneas que
+                        permiten la aparición de figuras distintas (no sólo la línea o el bingo del de 90) y que por
+                        tanto aumentan la posibilidad de conseguir premio. También está el bingo flash, de 15 números, 9
+                        extracciones máximas de bolas y 3 números por cartón.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer class="">
+                <div class="row align-items-center ">
+                    <div class="offset-sm-1 col-4  text-center ">
+                        <p class="h5"><a
+                                href="https://www.forummontau.com/sevilla/?gclid=Cj0KCQiA2vjuBRCqARIsAJL5a-Jh20NvwLqoTsAp2cpNeboF8vtER0LGLsStX-ExSQOBxda7CboXD2caAgzFEALw_wcB"
+                                target="_blank">¿Problemas con la ludopatía?</a></p>
+    
+                    </div>
+    
+                    <div class=" offset-md-1 offset-lg-2 col-8 col-sm-7 col-md-6 col-lg-4 text-center">
+                        <div class="py-sm-3 ">
+                            <a href="https://www.instagram.com/?hl=es" class="px-2"><img
+                                    src="../img/g3tCwR-logo-instagram-high-quality-pictures.png" data-toggle="tooltip"
+                                    title="¡Instagram!"></a>
+                            <a href="https://es.linkedin.com/" class="px-2"><img src="../img/61109.png"
+                                    data-toggle="tooltip" title="¡Linkedin!"></a>
+                            <a href="https://twitter.com/?lang=es" class="px-2" data-toggle="tooltip" title="¡Twitter!"><img
+                                    src="../img/58-580603_twitter-icon-white-transparent-transparent-background-twitter-logo.png"></a>
+                            <a href="https://www.facebook.com/" class="px-2" data-toggle="tooltip" title="Facebook!"><img
+                                    src="../img/pngocean.com.png"></a>
+                        </div>
+                    </div>
+    
+                </div>
+            </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../js/bingo.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>¡Bingo!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body class="section">
+    <div class="container">
+        <div class="row justify-content-center pb-3 ">
+            <div class="col-12   text-center">
+                <img src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                    class="img-fluid rounded-circle imagen" alt="" />
+
+
+                <button type="button" class="btn btn-primary float-right mt-3 mr-3" title="Introduce tus datos:"
+                    data-content="Hemos llegado al límite de jugadores simultaneos" data-toggle="popover"
+                    data-placement="bottom">
+                    Login
+                </button>
+            </div>
+
+        </div>
+
+        <div class="row ">
+            <div class="col-12 ">
+                <nav class="navbar navbar-expand-sm navbar-light bg-light border-right border-left border-primary">
+                    <button class="navbar-toggler custom-toggler mx-2 my-2" type="button" data-toggle="collapse"
+                        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="navbarNav">
+                        <ul class="navbar-nav  mx-auto ">
+                            <li class="nav-item  px-sm-4 px-md-5">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item px-sm-4 px-md-5">
+                                <a class="nav-link" href="reglas.html">Reglas del juego</a>
+                            </li>
+                            <li class="nav-item px-sm-4 px-md-5">
+                                <a class="nav-link" href="bingo.html">¡Bingo!</a>
+                            </li>
+                            <li class="nav-item px-sm-4 px-md-5">
+                                <a class="nav-link " href="ranking.html">Ranking</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+        <hr>
+        <div class="row pt-2 ">
+            <div class="d-none d-lg-block col-md-3 text-center ">
+                <button type="button" class="btn btn-primary  mt-3 mr-3 mx-auto"
+                    title="Estas en cola para empezar la partida"
+                    data-content="En cuanto tengamos suficientes jugadores comenzará la partida" data-toggle="popover"
+                    data-placement="bottom">
+                    Comenzar Partida de Bingo
+                </button>
+
+            </div>
+            <div class="col-12 col-lg-9">
+                <h1 class="h1 text-center"><u>¡Bievenido a nuestro Bingo!</u></h1>
+            </div>
+
+            <div class="col-12 d-lg-none text-center">
+                <button type="button" class="btn btn-primary  mt-3 mr-3" title="Estas en cola para empezar la partida"
+                    data-content="En cuanto tengamos suficientes jugadores comenzará la partida" data-toggle="popover"
+                    data-placement="bottom">
+                    Comenzar Partida de Bingo
+                </button>
+
+            </div>
+        </div>
+        <!-- Información Personal Pequeño // Chat -->
+        <div class="row pt-3">
+
+            <div class=" d-lg-none col-11 col-md-8 col-lg-3 pb-3  mx-auto">
+                <div class="card text-center  fondo1 ml-2">
+                    <div class="card-header">
+                        <strong>Información del Jugador</strong>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><u>Jugador: Alan Brito Delgado</u></h5>
+                        <img src="../img/Alan_Brito.JPG" alt="" class="img fluid rounded-circle pb-2">
+                        <div id="puntuacion" class="mb-3">
+                            <span><u>Información de la partida</u></span><br>
+                            <span>Puntuación Actual: 1600 puntos</span><br>
+                            <span>Puntuación Máxima de la partida Actual: 1600 puntos</span>
+                        </div>
+                        <div id="puntuacion" class="mb-3">
+                            <span><u>Información del jugador</u></span><br>
+                            <span>Record Personal: 3450 puntos</span><br>
+                            <span>Última Partida Jugada: hace 2 horas</span>
+                        </div>
+
+                    </div>
+                    <div class="card-footer text-muted bordefooter">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-html="true"
+                            title="<em>Puedes solicitar</em> <u>UNA</u> <b>pausa por partida.</b>">
+                            Solicitar Pausa
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-lg-none col-11 col-md-4 mx-auto ">
+                <div class="card text-center  bg-light">
+                    <div class="card-header">
+                        <strong> Chat <span class="badge badge-secondary bg-dark"> 3 Mensajes</span</strong> </div> <div
+                                    class="card-body bg-light justify-content-center mx-auto">
+                                <div class="toast bg-dark  mx-auto" role="alert" aria-live="assertive"
+                                    aria-atomic="true" data-autohide="false">
+                                    <div class="toast-header bg-dark">
+
+                                        <strong class="mr-auto">Manuela</strong>
+                                        <small class="text-muted">just now</small>
+                                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="toast-body">
+                                        ¡Que buen dia hace para jugar al bingo!
+                                    </div>
+                                </div>
+
+                                <div class="toast mx-auto bg-dark" role="alert" aria-live="assertive" aria-atomic="true"
+                                    data-autohide="false">
+                                    <div class="toast-header  bg-dark">
+                                        <strong class="mr-auto">Lope The Vegan</strong>
+                                        <small class="text-muted">2 seconds ago</small>
+                                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="toast-body">
+                                        Es perdonar al vencido el triunfo de la victoria.
+                                    </div>
+                                </div>
+                                <div class="toast mx-auto bg-dark" role="alert" aria-live="assertive" aria-atomic="true"
+                                    data-autohide="false">
+                                    <div class="toast-header  bg-dark">
+                                        <strong class="mr-auto">Poncho</strong>
+                                        <small class="text-muted">30 seconds ago</small>
+                                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="toast-body">
+                                        ¡Guau Guau! ¡Grrr!
+                                    </div>
+                                </div>
+                    </div>
+                    <form>
+                        <div class="form-row px-2 pb-2 ">
+                            <div class="col-9 col-sm-10 col-md-8">
+                                <input type="text" class="form-control" placeholder="Mensaje">
+                            </div>
+                            <div class="col-3 col-sm-2 col-md-3">
+                                <input type="submit" class="form-control " value="Enviar" id="enviar" />
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Información Personal -->
+        <div class="row pt-3 no-gutters justify-content-center">
+
+            <div class="d-none d-lg-block col-11 col-md-9 col-lg-3 pb-3 ">
+                <div class="card text-center h-100 fondo1 ml-2">
+                    <div class="card-header">
+                        <strong>Información del Jugador</strong>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"><u>Jugador: Alan Brito Delgado</u></h5>
+                        <img src="../img/Alan_Brito.JPG" alt="" class="img fluid rounded-circle pb-2">
+                        <div id="puntuacion" class="mb-3">
+                            <span><u>Información de la partida</u></span><br>
+                            <span id="puntuacionJugador">Puntuación Actual:</span><br>
+                            <span>Puntuación Máxima de la partida Actual: 1250 puntos</span>
+                        </div>
+                        <div id="puntuacion" class="mb-3">
+                            <span><u>Información del Jugador</u></span><br>
+                            <span>Record Personal: 3450 puntos</span><br>
+                            <span>Última Partida Jugada: hace 2 horas</span>
+                        </div>
+
+                    </div>
+                    <div class="card-footer text-muted bordefooter">
+                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-html="true"
+                            title="<em>Puedes solicitar</em> <u>UNA</u> <b>pausa por partida.</b>">
+                            Solicitar Pausa
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Cartones  -->
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 letra ml-lg-4  ">
+                <h3 class="h3 text-center pb-3"><u>Cartón Nº1</u></h3>
+                <div class="row pb-5 no-gutter text-center justify-content-center d-flex pr-2 pr-sm-1 pl-2 pl-sm-1">
+                    <div class="row align-items-center no-gutters borde1 justify-content-center  ">
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">23</div>
+                        <div class="col  bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div class="col  bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">12</div>
+                        <div id="numeroBingo" class="col  borde4 h-100 pt-1" onclick="numeroMarcado(this)">97</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col  borde4 h-100 pt-1" onclick="numeroMarcado(this)">47</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col h-100 pt-1" onclick="numeroMarcado(this)">80</div>
+                    </div>
+                    <div class="row align-items-center no-gutters borde2">
+                        <div class="col  bg-danger  borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col h-100 borde4 pt-1" onclick="numeroMarcado(this)">31</div>
+                        <div id="numeroBingo" class="col h-100 borde4 pt-1" onclick="numeroMarcado(this)">36</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col h-100 borde4 pt-1" onclick="numeroMarcado(this)">11</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col h-100 borde4 pt-1" onclick="numeroMarcado(this)">65</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col h-100 pt-1" onclick="numeroMarcado(this)">49</div>
+                    </div>
+                    <div class="row linea-3 align-items-center no-gutters borde3 mx-sm-auto ">
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">33</div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">26</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">71</div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">14</div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">86</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div class="col bg-danger"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                    </div>
+
+                </div>
+                <h3 class="h3 text-center pb-3"><u>Cartón Nº3</u></h3>
+                <div class="row pb-5 no-gutter text-center justify-content-center pr-2 pr-sm-1 pl-2 pl-sm-1">
+                    <div class="row align-items-center no-gutters borde1 justify-content-center  ">
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">99</div>
+
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">54</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">20</div>
+
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">66</div>
+
+                        <div id="numeroBingo" class="col h-100 pt-1" onclick="numeroMarcado(this)">72</div>
+
+                    </div>
+                    <div class="row align-items-center no-gutters borde2">
+
+                        <div id="numeroBingo" class="col h-100 borde4 pt-1o" onclick="numeroMarcado(this)">46</div>
+
+                        <div id="numeroBingo" class="col h-100 borde4 pt-1" onclick="numeroMarcado(this)">57</div>
+                        <div class="col bg-danger  borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col h-100 borde4 pt-1" onclick="numeroMarcado(this)">9</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col h-100 borde4 pt-1o" onclick="numeroMarcado(this)">88</div>
+
+                        <div id="numeroBingo" class="col h-100 pt-1 borde4" onclick="numeroMarcado(this)">17</div>
+                        <div class="col bg-danger "><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                    </div>
+                    <div class="row linea-3 align-items-center no-gutters borde3 mx-sm-auto ">
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div class="col  bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">3</div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">63</div>
+                        <div id="numeroBingo" class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">29</div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">95</div>
+                        <div id="numeroBingo" class="col bg-danger borde4 "><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col h-100 pt-1" onclick="numeroMarcado(this)">39</div>
+
+
+                    </div>
+                    <a class="btn btn-primary btn-lg  mt-5 d-none d-sm-block" href="#" role="button" data-toggle="modal"
+                        data-target="#linea">Cantar Línea</a>
+                </div>
+
+
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 letra ml-lg-4  ">
+                <h3 class="h3 text-center  pb-3"><u>Cartón Nº2</u></h3>
+                <div class="row pb-5 no-gutter text-center justify-content-center d-flex pr-2 pr-sm-1 pl-2 pl-sm-1">
+                    <div class="row align-items-center no-gutters borde1 justify-content-center  ">
+                        <div id="numeroBingo" class="col  borde4 h-100 pt-1" onclick="numeroMarcado(this)">71</div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">6</div>
+                        <div class="col  bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div class="col  bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col  borde4 h-100 pt-1" onclick="numeroMarcado(this)">82</div>
+
+                        <div id="numeroBingo" class="col  borde4 h-100 pt-1" onclick="numeroMarcado(this)">22</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col h-100 pt-1" onclick="numeroMarcado(this)">38</div>
+                    </div>
+                    <div class="row align-items-center no-gutters borde2">
+
+                        <div id="numeroBingo" class="col h-100 borde4 pt-1" onclick="numeroMarcado(this)">17</div>
+                        <div class="col  bg-danger  borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col h-100 borde4 pt-1" onclick="numeroMarcado(this)">60</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col h-100 borde4 pt-1" onclick="numeroMarcado(this)">28</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col h-100 borde4 pt-1" onclick="numeroMarcado(this)">42</div>
+
+                        <div id="numeroBingo" class="col h-100 pt-1" onclick="numeroMarcado(this)">63</div>
+                    </div>
+                    <div class="row linea-3 align-items-center no-gutters borde3 mx-sm-auto ">
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">13</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">4</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">70</div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">29</div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">62</div>
+                        <div class="col bg-danger "><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+
+                    </div>
+
+                </div>
+                <h3 class="h3 text-center pb-3"><u>Cartón Nº4</u></h3>
+                <div class="row pb-5 no-gutter text-center justify-content-center pr-2 pr-sm-1 pl-2 pl-sm-1">
+                    <div class="row align-items-center no-gutters borde1 justify-content-center  ">
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">59</div>
+
+
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1o" onclick="numeroMarcado(this)">3</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+
+
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">24</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">51</div>
+
+                        <div id="numeroBingo" class="col h-100 pt-1 borde4" onclick="numeroMarcado(this)">57</div>
+                        <div class="col bg-danger "><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+
+                    </div>
+                    <div class="row align-items-center no-gutters borde2">
+                        <div class="col  bg-danger  borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col h-100 borde4 pt-1" onclick="numeroMarcado(this)">9</div>
+
+                        <div id="numeroBingo" class="col h-100 borde4 pt-1" onclick="numeroMarcado(this)">11</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col h-100 borde4 pt-1" onclick="numeroMarcado(this)">69</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+
+                        <div id="numeroBingo" class="col h-100 borde4 pt-1" onclick="numeroMarcado(this)">74</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col h-100 pt-1" onclick="numeroMarcado(this)">10</div>
+                    </div>
+                    <div class="row linea-3 align-items-center no-gutters borde3 mx-sm-auto ">
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">96</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">88</div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div class="col bg-danger borde4"><img
+                                src="../img/kisspng-buzzword-bingo-game-bigo-5b0ad9d072c036.57562746152743777647.png"
+                                class="imagen-2" alt="" /></div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">26</div>
+                        <div id="numeroBingo" class="col borde4 h-100 pt-1" onclick="numeroMarcado(this)">39</div>
+                        <div id="numeroBingo" class="col h-100 pt-1" onclick="numeroMarcado(this)">61</div>
+
+
+                    </div>
+                    <a class="btn btn-primary btn-lg  mt-5 d-sm-none mr-5" href="#" role="button" data-toggle="modal"
+                        data-target="#linea">Cantar Línea</a>
+                    <a class="btn btn-primary btn-lg  mt-5" href="#" role="button" data-toggle="modal"
+                        data-target="#bingo">Cantar Bingo</a>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+        <hr>
+        <!-- Información Jugadores// Chat -->
+        <div class="row py-3">
+
+            <div class="col-12 col-lg-9 ">
+                <div class="card text-center bg-light h-100">
+                    <div class="card-header jugadoresPartida">
+                        <strong> Jugadores de la partida</strong>
+                    </div>
+                    <div class="card-body ">
+                        <div class="row d-block ">
+
+                            <div class="card-group ">
+                                <div class="col-12 col-sm-4  pt-2">
+                                    <div class="card imagen-jugador h-100 mx-auto justify-content-center bg-dark">
+                                        <img src="../img/topdiario1.PNG" class="card-img-top img-fluid" alt="...">
+                                        <div class="card-body ">
+                                            <h5 class="card-title h4"><strong><u>Jugador/a: Manuela</u></strong></h5>
+                                            <p class="card-text">Puntuación: 980 puntos</p>
+                                            <p class="card-text">Posición última partida: 4</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4  pt-2">
+                                    <div class="card imagen-jugador mx-auto h-100 bg-dark">
+                                        <img src="../img/topdiario2.PNG" class="card-img-top img-fluid" alt="...">
+                                        <div class="card-body">
+                                            <h4 class="h4"><strong><u>Jugador/a: Poncho</u></strong></h4>
+                                            <p class="card-text">Puntuación: 1250 puntos</p>
+                                            <p class="card-text">Posición última partida: 2</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4  pt-2 ">
+                                    <div class="card imagen-jugador mx-auto h-100  bg-dark">
+                                        <img src="../img/j1.png" class="card-img-top img-fluid" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title h4"><strong><u>Jugador/a: Lope The Vegan</u></strong>
+                                            </h5>
+                                            <p class="card-text">Puntuación: 1090 puntos</p>
+                                            <p class="card-text">Posición última partida: 1</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+                <div class="card text-center h-100 bg-light">
+                    <div class="card-header">
+                        <strong> Chat <span class="badge badge-secondary bg-dark"> 3 Mensajes</span</strong> </div> <div
+                                    class="card-body bg-light">
+                                <div class="toast bg-dark" role="alert" aria-live="assertive" aria-atomic="true"
+                                    data-autohide="false">
+                                    <div class="toast-header bg-dark">
+
+                                        <strong class="mr-auto">Manuela</strong>
+                                        <small class="text-muted">just now</small>
+                                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="toast-body">
+                                        ¡Que buen dia hace para jugar al bingo!
+                                    </div>
+                                </div>
+
+                                <div class="toast  bg-dark" role="alert" aria-live="assertive" aria-atomic="true"
+                                    data-autohide="false">
+                                    <div class="toast-header  bg-dark">
+                                        <strong class="mr-auto">Lope The Vegan</strong>
+                                        <small class="text-muted">2 seconds ago</small>
+                                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="toast-body">
+                                        Es perdonar al vencido el triunfo de la victoria.
+                                    </div>
+                                </div>
+                                <div class="toast  bg-dark" role="alert" aria-live="assertive" aria-atomic="true"
+                                    data-autohide="false">
+                                    <div class="toast-header  bg-dark">
+                                        <strong class="mr-auto">Poncho</strong>
+                                        <small class="text-muted">30 seconds ago</small>
+                                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="toast-body">
+                                        ¡Guau Guau! ¡Grrr!
+                                    </div>
+                                </div>
+                    </div>
+                    <form>
+                        <div class="form-row px-2 pb-2 ">
+                            <div class="col-8">
+                                <input type="text" class="form-control" placeholder="Mensaje">
+                            </div>
+                            <div class="col ">
+                                <input type="submit" class="form-control " value="Enviar" id="enviar" />
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+
+
+            </div>
+        </div>
+        <!-- Modal Linea -->
+        <div class="modal fade" id="linea" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content text-center bg-dark">
+                    <div class="modal-header justify-content-center">
+                        <h5 class="modal-title text-center h4" id="exampleModalScrollableTitle">Estamos Comprobando tus
+                            Cartones</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Ten paciencia mientras se realizan las comprobaciones...<br><br>
+                        <div class="spinner-border text-light" role="status">
+                            <span class="sr-only">Ten paciencia mientras se realizan las comprobaciones...</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Bingo -->
+        <div class="modal fade" id="bingo" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content text-center bg-dark">
+                    <div class="modal-header justify-content-center">
+                        <h5 class="modal-title text-center h4" id="exampleModalScrollableTitle">Estamos Comprobando tus
+                            Cartones</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Ten paciencia mientras se realizan las comprobaciones...<br><br>
+                        <div class="spinner-border text-light" role="status">
+                            <span class="sr-only">Ten paciencia mientras se realizan las comprobaciones...</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row align-items-center ">
+                <div class="offset-sm-1 col-4  text-center ">
+                    <p class="h5"><a
+                            href="https://www.forummontau.com/sevilla/?gclid=Cj0KCQiA2vjuBRCqARIsAJL5a-Jh20NvwLqoTsAp2cpNeboF8vtER0LGLsStX-ExSQOBxda7CboXD2caAgzFEALw_wcB"
+                            target="_blank">¿Problemas con la ludopatía?</a></p>
+
+                </div>
+
+                <div class=" offset-md-1 offset-lg-2 col-8 col-sm-7 col-md-6 col-lg-4 text-center">
+                    <div class="py-sm-3 ">
+                        <a href="https://www.instagram.com/?hl=es" class="px-2"><img
+                                src="../img/g3tCwR-logo-instagram-high-quality-pictures.png" data-toggle="tooltip"
+                                title="¡Instagram!"></a>
+                        <a href="https://es.linkedin.com/" class="px-2"><img src="../img/61109.png"
+                                data-toggle="tooltip" title="¡Linkedin!"></a>
+                        <a href="https://twitter.com/?lang=es" class="px-2" data-toggle="tooltip" title="¡Twitter!"><img
+                                src="../img/58-580603_twitter-icon-white-transparent-transparent-background-twitter-logo.png"></a>
+                        <a href="https://www.facebook.com/" class="px-2" data-toggle="tooltip" title="Facebook!"><img
+                                src="../img/pngocean.com.png"></a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../js/bingo.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,426 @@
+*{
+    margin:0;
+    padding: 0;
+    
+}
+body{
+    background-color: #3c1346;
+}
+
+.container{
+    background-color: #faa62e;
+    padding:0;
+}
+
+hr{
+    background-color:#3c1346;
+    padding:0;
+    margin:0;
+    color: #3c1346;
+}
+.hr {
+    background-color: #faa62e;
+}
+
+footer img {
+    width: 45px;
+  }
+
+.h5 a{
+    text-decoration: none !important;
+    color: #3c1346;
+}
+
+.imagen {
+    width: 30%;
+}
+
+.bg-light {
+    background-color:#3c1346 !important;
+    color: #faa62e  !important;
+}
+
+.bg-dark {
+    background-color:#faa62e !important;
+    color: #3c1346  !important;
+}
+
+.border-primary {
+    border-color: #faa62e !important;
+}
+
+.border-secondary {
+    border-color: #3c1346 !important;
+    border-width: 2px !important;
+}
+
+.navbar-light .navbar-nav .nav-link  {
+    font-size: 18px;
+    color:#faa62e;
+    font-weight: bold;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.navbar-light .navbar-nav .nav-link:hover  {
+    color:#3c1346;
+    background-color: #faa62e;
+    font-weight: bold;
+}
+
+.navbar{
+    padding: 0;
+}
+
+ul li a{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.index {
+    border: 1px solid #faa62e !important;
+    background-color: #faa62e!important;
+}
+.index-2 {
+    background-color:#3c1346 !important;
+    color: #faa62e  !important;
+}
+
+.card-header:first-child {
+    border-width: 1px;
+    border-color: #faa62e !important;
+}
+
+.h3 {
+    color: #3c1346;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: #faa62e;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.btn-link:hover {
+    color: #faa62e;
+}
+
+.media img {
+    width: 20%;
+}
+
+.btn-primary{
+    color:#faa62e;
+    background-color: #3c1346;
+    border: 1px solid #faa62e !important;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    color:#3c1346;
+    font-weight: bold;
+    background-color: #faa62e;
+    border: 1px solid #3c1346 !important;
+}
+
+ .btn-primary:active{
+    color:#3c1346 !important;
+    font-weight: bold;
+    background-color: #faa62e !important;
+    border: 1px solid #3c1346 !important;
+    box-shadow: 0 0 0 0.2rem rgba(250,166,46,.5) !important;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(250,166,46,.5);
+}
+
+.modal-header{
+    border-bottom: 1px solid #3c1346;
+}
+
+.modal-footer {
+    border-top: 1px solid #3c1346 !important;
+}
+
+.index-2 img{
+    width: 60%;
+}
+
+.popover{
+    background-color: #faa62e !important;
+    color: #3c1346 !important;
+}
+
+.popover-body{
+    color: #3c1346 !important;
+}
+
+.popover-header{
+    background-color: #faa62e !important;
+    border-bottom: 1px solid #3c1346 !important;
+}
+
+.bs-popover-auto[x-placement^=right]>.arrow::after, .bs-popover-right>.arrow::after {
+
+    border-right-color: #faa62e !important;
+}
+
+.bs-popover-auto[x-placement^=bottom]>.arrow::after, .bs-popover-bottom>.arrow::after {
+
+    border-bottom-color: #faa62e !important;
+}
+.bs-popover-auto[x-placement^=bottom] .popover-header::before, .bs-popover-bottom .popover-header::before {
+    border-bottom: 1px solid #faa62e !important;
+}
+.list-group-item {
+    background-color: #3c1346 !important;
+    color: #faa62e !important;
+    border: 1px solid #faa62e !important;
+}
+
+.h1{
+    color:#3c1346 !important;
+}
+
+.h3{
+    color:#3c1346 !important;
+}
+
+.h5 {
+    color:#3c1346 !important;
+}
+
+.jugadoresPartida{
+    color:#faa62e !important;
+    font-size: 17px;
+}
+
+.h4{
+    color:#3c1346 !important;
+    font-size: 17px;
+}
+
+.cabecera {
+    margin-right:0 !important;
+}
+
+.row {
+    margin-right:0px  !important;
+    margin-left: 0px  !important;
+}
+
+.navbar {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(250,166,46)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #faa62e;
+} 
+
+.linea-2{
+    height: 35px;
+    
+}
+
+.imagen-2{
+    height: 40px;
+}
+
+.col {
+   
+    padding-right: 5px !important;
+    width: 60px;
+}
+
+.borde1 {
+    border-top: 2px solid #3c1346;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-left: 2px solid #3c1346;
+    border-right: 2px solid #3c1346;
+    
+}
+
+.borde2 {
+    border: 2px solid #3c1346;
+
+}
+
+.borde3 {
+    border-bottom: 2px solid #3c1346;
+    border-left: 2px solid #3c1346;
+    border-right: 2px solid #3c1346;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.bg-danger{
+    background-color: #ee2e63 !important;
+}
+
+.borde4 {
+    border-right: 1px solid #3c1346;
+}
+
+.letra {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3c1346;
+}
+
+.container{
+    max-width: 1280px !important;
+}
+
+.col-sm{
+    width: 40px !important;
+}
+
+.text-light {
+    color: #3c1346!important;
+}
+
+.fondo1{
+    background-color:#3c1346;
+    color: #faa62e;
+}
+
+.fondo1 img{
+    width: 50%;
+}
+
+.text-muted {
+    color: #faa62e!important;
+}
+
+#puntuacion{
+    border: 1px solid #faa62e;
+    border-radius: 10px;
+    background-color:#faa62e ;
+    color: #3c1346;
+    font-weight: bold;
+}
+
+.bordefooter{
+    border-top: 1px solid #faa62e;
+}
+
+.imagen-jugador img{
+   width: 100%;
+  height: 200px;
+}
+
+.toast-header {
+    border-bottom: 1px solid #3c1346 !important;
+}
+
+#enviar{
+    background-color: #3c1346;
+    color: #faa62e;
+    border: 1px solid #faa62e;
+}
+
+.numClick {
+    background-color: #3c1346;
+    color: #faa62e;
+    text-decoration: line-through;
+}
+
+#numeroBingo:hover{
+    color:#faa62e;
+    background-color: #3c1346;
+    cursor:pointer;
+}
+
+
+
+@media screen and (min-width: 1199px) {
+    .col-md{
+       width: 55px !important;
+    }
+   .imagen-2{
+       height: 40px;
+       width: 55px;
+   }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1198px) {
+    .imagen-2{
+        height: 35px;
+        width: 40px;
+    }
+ }
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .imagen-2{
+        height: 35px;
+        width: 40px;
+    }
+    .fondo1 img{
+        width: 15%;
+    }
+
+    #puntuacion {
+        width: 80%;
+        margin: auto;
+    }
+ }
+ @media screen and (min-width: 576px) and (max-width: 767px) {
+    .imagen-2{
+        height: 30px;
+        width: 35px;
+    }
+    .col-md{
+        width: 45px !important;
+     }
+
+     .fondo1 img{
+        width: 15%;
+    }
+    #puntuacion {
+        width: 70%;
+        margin: auto;
+    }
+ }
+
+ @media screen and (max-width: 575px) {
+    .col{
+        width: 55px !important;
+     }
+    .imagen-2{
+        height: 40px;
+        width: 55px;
+    }
+    .fondo1 img{
+        width: 25%;
+    }
+    .imagen-jugador{
+        width: 70%;
+    }
+
+    footer img {
+        width: 40px;
+      }
+ }
+ @media (max-width: 767px), handheld and (orientation: landscape) { 
+    /*.imagen-jugador{
+        width: 50%;
+    }*/
+
+    
+    /* No he realizado cambios cuando se produce un cambio a horizontal con el móvil ya que, al cambiarse
+        automáticamente se coloca correctamente como pantalla SM, he comprobado que funciona si realizo cambios manteniendo
+        este width y el handheld.*/
+
+  }
+
+
+
